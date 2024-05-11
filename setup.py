@@ -9,9 +9,10 @@ with open(path.join(this_directory, "README.md"), encoding="utf-8") as f:
 
 # packages required (replaces requirements.txt)
 required = [
+    'pandas',
     'spacy',
     'scispacy',
-    'pandas',
+    'spacy-entity-linker'
 ]
 
 setup(
