@@ -12,7 +12,9 @@ required = [
     'pandas',
     'spacy',
     'scispacy',
-    'spacy-entity-linker'
+    'spacy-entity-linker',
+    'scikit-learn',
+    'matplotlib'
 ]
 
 setup(
