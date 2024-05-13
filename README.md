@@ -1,12 +1,18 @@
 # medical-nlp
 
-NLP for scientific and medical research.
+NLP for scientific and medical research. This use case guides you through some of the basics on using [SciSpacy](https://allenai.github.io/scispacy/) and building a medical-based clustering algorithm from text embeddings. 
+
+The data is an extract from the [MT Samples](https://mtsamples.com/) dataset, which consists of several medical transcriptions from different consultations. 
+
+The Notebooks are under the [analysis](/analysis/) folder. 
+
 
 ## Installation 
 
 **NOTE**: Using a Bash terminal is recommended for the set up. 
 
 It is assumed Python and Conda have been installed.
+
 
 SciSpacy requires python==3.11 
 
@@ -21,6 +27,9 @@ activate your virtual environment if you created it.
 `conda activate <ENVNAME>`
 
 Build the module. This will allow to import methods and classes from the package seamlessly.
+
+**NOTE**: Scispacy can give errors when installing in MacOS M1, M2 or M3 machines. In that case, first execute:
+`conda install nmslib`
 
 run 
 `pip install --upgrade build`
@@ -47,9 +56,9 @@ More information about the models in the following [link](https://github.com/all
 
 **NOTE**: Some of the features like vectors are only available in medium and large models in Spacy. Hence, it is suggested to install at least a medium size model to be able to run all the methods and functions of this tutorial.
 
-**NOTE**: Scispacy can give errors when installing in MacOS M1, M2 or M3 machines. In that case, first execute:
-`conda install nmslib` 
-and then run 
-`pip install .`
 
 The dependencies are highlighted in the `setup.py` file under `requires` and can be manually installed as well.
+
+## License 
+
+Protected under MIT license.
