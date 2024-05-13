@@ -1,3 +1,4 @@
+from collections import Counter
 import pandas as pd
 import numpy as np
 
@@ -53,3 +54,16 @@ def format_embeddings_for_clustering(vectors_series: pd.Series) -> np.ndarray:
         np.ndarray: Array of vectors formatted.
     """
     return np.array([v for v in vectors_series])
+
+
+def get_most_common(
+        list_: list,
+        top_n: int = 10,
+        exclude: list[str] = []
+):
+    counts = Counter(
+        x for sublist in list_
+        for x in sublist
+        if x not in exclude
+    ).most_common(top_n)
+    return counts
