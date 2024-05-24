@@ -30,12 +30,19 @@ Build the module. This will allow to import methods and classes from the package
 
 ### Build the module
 
-run 
+First, install the build package. This will allow you to build the Python Module and install its dependencies. 
+
+`python -m pip install build`
+
+or
+
 `pip install --upgrade build`
-followed by 
+
+then, Build the `medical-nlp` module using: 
+
 `python -m build`
 
-install all dependencies with 
+Finally, install all dependencies that are in the `setup.py` file with 
 `pip install .`
 
 **Install the NLP models desired** 
