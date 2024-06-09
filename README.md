@@ -48,7 +48,7 @@ then, Build the `medical-nlp` module using:
 `python -m build`
 
 Finally, install all dependencies that are in the `setup.py` file with 
-`pip install .`
+`pip install -e .`
 
 **Install the NLP models desired** 
 
