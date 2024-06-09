@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from setuptools import setup
+from setuptools import setup, find_packages
 from os import path
 # read the contents of your README file
 this_directory = path.abspath(path.dirname(__file__))
@@ -19,7 +19,8 @@ required = [
 setup(
     name="medical_nlp",
     version="0.1",
-    packages=["src", "src.medical_nlp"],
+    package_dir={'': 'src'},
+    packages=find_packages(),
     py_modules=['medical_nlp'],
     long_description=long_description,
     long_description_content_type="text/markdown",

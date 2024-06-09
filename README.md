@@ -2,9 +2,14 @@
 
 NLP for scientific and medical research. This use case guides you through some of the basics on using [SciSpacy](https://allenai.github.io/scispacy/) and building a medical-based clustering algorithm from text embeddings. 
 
-The data is an extract from the [MT Samples](https://mtsamples.com/) dataset, which consists of several medical transcriptions from different consultations. 
+## Exercise and use case.
 
-The Notebooks are under the [analysis](/analysis/) folder. 
+We have been tasked to explore the [MT Samples](https://mtsamples.com/) data set, which consists of several medical transcriptions from different consultations. There, we can see that they have manually annotated the consultation under `medical_specialty`, but this categories are very broad. Using Machine Learning, we aim to "drill-down" on these to provide more accurate and fine-grained granularity in the categorization. 
+
+### How to start
+The Notebooks are under the [analysis](/analysis/) folder. It's recommended to run the [scispacy_basics](./analysis/scispacy_basics.ipynb) notebook first, and then continue with [medical_text_clustering](./analysis/medical_text_clustering.ipynb)
+
+---
 
 
 ## Installation 

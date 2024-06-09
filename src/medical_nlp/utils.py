@@ -61,6 +61,18 @@ def get_most_common(
         top_n: int = 10,
         exclude: list[str] = []
 ):
+    """
+    Returns the most common elements from a list of lists, excluding specified elements.
+
+    Args:
+        list_ (list): A list of lists from which to count elements.
+        top_n (int, optional): The number of top common elements to return. Defaults to 10.
+        exclude (list[str], optional): A list of elements to exclude from the count. Defaults to an empty list.
+
+    Returns:
+        list[tuple]: A list of tuples, where each tuple contains an element and its count,
+        representing the most common elements in the input list.
+    """
     counts = Counter(
         x for sublist in list_
         for x in sublist
