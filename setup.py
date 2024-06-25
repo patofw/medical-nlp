@@ -13,7 +13,8 @@ required = [
     'scispacy',
     'spacy-entity-linker',
     'scikit-learn',
-    'matplotlib'
+    'matplotlib',
+    'spacy-streamlit'
 ]
 
 setup(
