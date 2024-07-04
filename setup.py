@@ -21,7 +21,7 @@ setup(
     name="medical_nlp",
     version="0.1",
     package_dir={'': 'src'},
-    packages=find_packages(),
+    packages=["medical_nlp"],
     py_modules=['medical_nlp'],
     long_description=long_description,
     long_description_content_type="text/markdown",
